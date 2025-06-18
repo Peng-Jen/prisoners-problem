@@ -45,30 +45,3 @@ def run_simulation(name: str, strategy: Literal["random", "cycle_following"], nu
     simu_info.update({"name": name, "strategy": strategy, "num_trials": num_trials, "shift": shift})
     
     return simu_info, success_record
-
-# if __name__ == "__main__":
-#     info, res = run_simulation("Test", "cycle_following", 10, Instance(10, 20, 10))
-#     print(res)
-#     methods = ["random", "cycle_following", "cycle_following"]
-#     shifts = [0, 0, -5]
-#     titles = ["Randomly Picked", "Cycle Following", "Cycle Following with shift = $-5$"]
-#     infos = []
-#     num_methods = len(methods)
-#     fig, axes = plt.subplots(nrows=1, ncols=num_methods, figsize=(5 * num_methods, 5))
-#     for i, method in enumerate(methods):
-#         # if i == 0:
-#         #     continue
-#         info, results = run_simulation(titles[i], strategy=method, num_trials=1000, instance_template=Instance(100), shift=shifts[i])
-#         plot_success_dist(info, results, ax=axes[i])
-#         print(info)
-    # trials = [1000, 10000, 100000, 1000000]
-    # for i in range(len(trials)):
-    #     info, results = run_simulation(titles[1], strategy=methods[1], num_trials=trials[i], shift=None)
-    #     plot_success_dist(info, results, ax=axes[i])
-    # results, info = run_simulation(strategy="cycle_following", num_trials=1000, shift=5)
-    # plot_success_dist("cycle_following_shfit=5", results, info, ax=axes[2])
-
-    # plt.tight_layout()
-    # plt.show()
-    # random_res = run_stimulattion("random", 10000, 100)
-    # plot_success_dist(random_res, "Random")
