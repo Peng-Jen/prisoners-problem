@@ -39,7 +39,7 @@ def plot_success_dist(simu_info: Dict[str, Any], results: List[float], ax: Optio
         fig = ax.figure
 
     ax.set_title(simu_info["name"], fontdict={"size": 14, "fontweight": "bold"}, pad=10)
-    _, bins_edges, patches = ax.hist(results, bins=list(range(0, int(simu_info["num_prisoners"] * 1.04), int(0.05 * simu_info["num_prisoners"]))), alpha=0.7, align="right")
+    _, bins_edges, patches = ax.hist(results, bins=list(range(simu_info["num_prisoners"]+1)), alpha=0.7, align="right")
     ax.set_xlim(-0.05 * simu_info["num_prisoners"], 1.1 * simu_info["num_prisoners"])
     ax.set_xlabel("# of successful prisoners", fontdict={"size": 12}, labelpad=8)
     ax.set_ylabel("Frequency", fontdict={"size": 12}, labelpad= 8)

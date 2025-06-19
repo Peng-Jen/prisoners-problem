@@ -1,6 +1,6 @@
 # Prisoners Problem Simulation
 
-_Version 0.1.0_
+_Version 0.1.1_
 
 This project simulates the well-known Prisoners Problem, providing implementations of different strategies to solve it and visualizing the outcomes through both a command-line interface and a Streamlit web app.
 
@@ -95,7 +95,7 @@ To run the Streamlit web app, please run the following command
 ```bash
 streamlit run streamlit_app.py
 ```
-This will launch a web interface where you can select parameters like the number of prisoners, boxes, and strategy, and visualize the simulation results interactively.
+This will launch a web interface where you can select parameters like the number of prisoners, boxes, and strategy, and visualize the simulation results interactively. Users can also understand how cycle-following strategy works in detail through this interface.
 
 ## Tests
 To run the tests using pytest, please run the following command
