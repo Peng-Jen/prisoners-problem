@@ -21,14 +21,12 @@ The puzzle becomes interesting because of the constraints on the prisoners’ ab
 In the random picking strategy, each prisoner randomly picks 50 boxes. This method, though intuitive, has a very low probability of success.
 
 Mathematically, the probability of success for a prisoner is
-$$
-    P(\text{success})=\frac{50}{100} = 0.5
-$$
+
+$$P(\text{success})=\frac{50}{100} = 0.5$$
 
 Since all prisoners' selections are independent, the probability of all 100 prisoners succeeding is
-$$
-    P(\text{success\_all})=0.5^{100}\approx 8\text{e}-31
-$$
+
+$$P(\text{all-success})=0.5^{100}\approx 8 \text{e} -31$$
 
 This is incredibly small, highlighting that random picking is not a viable strategy for guaranteeing all prisoners succeed.
 
@@ -37,7 +35,9 @@ The cycle following strategy is a more structured method that leverages the box 
 
 This strategy ensures a higher probability of success because it relies on the mathematical property of permutations. The idea is that each prisoner follows a fixed cycle, and if the cycle length is less than or equal to 50, then all prisoners will succeed.
 
-Mathematically, if the longest cycle in the permutation of boxes is less than or equal to 50, all prisoners will succeed. The probability of success in this strategy is approximately **31%** for large numbers of prisoners.
+Mathematically, if the longest cycle in the permutation of boxes is less than or equal to 50, all prisoners will succeed. The probability of success in this strategy is
+
+$$P(\text{longest-cycle-length} \le 50) \approx 31\\% $$
 
 The key benefit of the cycle following strategy is that it discards the idea of maximizing the number of prisoners who succeed and focuses on the minimum condition for complete success.
 
