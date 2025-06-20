@@ -130,4 +130,4 @@ Licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 ## Reference
 
 If you use this package for research or teaching, please cite:
-Peng-Jen Chen, https://github.com/Peng-Jen/prisoners_problem, 2025
+Peng-Jen Chen, https://github.com/Peng-Jen/prisoners-problem, 2025

@@ -76,6 +76,8 @@ with tab1:
             simu_info, results = run_simulation(name=title_name, strategy=strategy_name, num_trials=num_trials, instance_template=instance, shift=shift)
             fig = plot_success_dist(simu_info, results)
             st.pyplot(fig)
+            success_rate = round(results.count(simu_info['num_prisoners']) / num_trials * 100, 2)
+            st.markdown(f"#### Success rate: {success_rate}%")
 
 
 with tab2:
